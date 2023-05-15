@@ -47,8 +47,8 @@
                     <td><?php echo $row['name']; ?></td>
                     <td><?php echo $row['email']; ?></td>
                     <td><?php echo $row['password']; ?></td>
-                    <td><button class="btn btn-primary">Update</button>
-                    <button class="btn btn-danger">Delete</button></td>
+                    <td><a href="./update.php?id=<?php echo $row['id']; ?>" class="btn btn-primary">Update</a>
+                    <a href="./delete.php?id=<?php echo $row['id']; ?>" class="btn btn-danger">Delete</a></td>
                 </tr>
             <?php } ?>
         </tbody>
